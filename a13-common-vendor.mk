@@ -24,6 +24,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/teegris_v4.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris_v4.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
+    vendor/samsung/a13-common/proprietary/vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc \
+    vendor/samsung/a13-common/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider@4.0-service.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
@@ -122,51 +124,31 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.gnss@2.1-impl \
     vulkan.mali \
     libSEF.quram \
+    libbauthserver \
+    libbauthtzcommon \
+    libegis_fp_normal_sensor_test \
     libexynoscamera3 \
     libexynoscamera_plugin \
     libexynoscamera_tdnr_plugin \
+    libfloatingfeature \
+    libgf_in_system_lib \
     libmfb \
+    libqfp_sensortest \
     libremosaic_wrapper \
     libsecnativefeature \
     libsecril-client \
     libsemnativecarrierfeature \
     libsensorlistener \
+    libsynaFpSensorTestNwd \
     libteecl \
     libuniapi \
     libuniplugin \
     libuuid_vendor \
     sensors.grip \
     sensors.sensorhub \
+    vendor.samsung.hardware.gnss@2.0 \
+    vendor.samsung.hardware.gnss@2.1 \
     vendor.samsung.hardware.thermal@1.0 \
-    android.hardware.biometrics.common-V3-ndk \
-    android.hardware.biometrics.face-V3-ndk \
-    android.hardware.biometrics.fingerprint@2.1 \
-    android.hardware.camera.common@1.0 \
-    android.hardware.camera.device@1.0 \
-    android.hardware.camera.device@3.2 \
-    android.hardware.camera.device@3.3 \
-    android.hardware.camera.device@3.4 \
-    android.hardware.camera.device@3.5 \
-    android.hardware.camera.device@3.6 \
-    android.hardware.camera.provider@2.4 \
-    android.hardware.camera.provider@2.5 \
-    android.hardware.camera.provider@2.6 \
-    camera.device@1.0-impl \
-    camera.device@3.2-impl \
-    camera.device@3.3-impl \
-    camera.device@3.4-impl \
-    camera.device@3.5-impl \
-    android.hardware.audio.effect@2.0-impl \
-    android.hardware.audio.effect@6.0-impl \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio@6.0-impl \
-    android.hardware.bluetooth@1.0-impl \
-    android.hardware.gatekeeper@1.0-impl \
-    android.hardware.graphics.allocator@4.0-impl \
-    android.hardware.graphics.mapper@4.0-impl \
-    android.hardware.renderscript@1.0-impl \
-    android.hardware.sensors@1.0-impl \
-    android.hardware.soundtrigger@2.0-impl \
     audio.primary.default \
     audio.primary.exynos850 \
     audio.sec_primary.default \
@@ -180,47 +162,52 @@ PRODUCT_PACKAGES += \
     vibrator.default \
     libBeauty_v4.camera.samsung \
     libDualCamBokehCapture.camera.samsung \
+    libExynosHWCService \
     libFace_Landmark_API.camera.samsung \
+    libHprFace_GAE_api.camera.samsung \
     libHpr_RecGAE_cvFeature_v1.0.camera.samsung \
     libLocalTM_capture_core.camera.samsung \
     libLocalTM_wrapper.camera.samsung \
     libOpenCv.camera.samsung \
-    libcamera2ndk_vendor \
+    lib_SamsungRec_07010 \
+    libaboxpcmdump \
+    libbeautyshot.arcsoft \
+    libdatamod \
+    libdualcam_refocus_image \
     libexifa.camera.samsung \
     libexynoscamera_plugin_utils \
+    libhdrwrapper \
+    libhigh_dynamic_range_bokeh \
+    liblastaboxmsg \
+    libmpbase \
     liboemcrypto \
     libprofileparamstorage \
+    librecordalive \
     libsecaudiocoreutils \
+    libsecaudioinfo \
+    libspeakercalibration \
     libwvhidl \
     libswdap \
-    vendor.samsung.hardware.biometrics.face-V3-ndk \
+    vendor.samsung.hardware.audio@1.0 \
     vendor.samsung.hardware.biometrics.fingerprint@3.0 \
     vendor.samsung.hardware.camera.device@5.0-impl \
     vendor.samsung.hardware.camera.device@5.0 \
     vendor.samsung.hardware.camera.provider@4.0-legacy \
     vendor.samsung.hardware.camera.provider@4.0 \
+    vendor.samsung.hardware.thermal-V1-ndk \
     libSemDataProps \
     libSemTelephonyProps \
-    libbauthserver \
-    libbauthtzcommon \
     libcrypto-tm \
-    libegis_fp_normal_sensor_test \
     libengmode_client \
-    libfloatingfeature \
-    libgf_in_system_lib \
     libkeymaster_helper \
     libprotobuf-cpp-full-21.7 \
-    libqfp_sensortest \
     libril_sem \
     libsec-ril \
     libskeymaster4device \
     libstork_shared \
-    libsynaFpSensorTestNwd \
     libvkmanager_vendor \
     libvkservice \
     libwrappergps \
-    vendor.samsung.hardware.gnss@2.0 \
-    vendor.samsung.hardware.gnss@2.1 \
     vendor.samsung.hardware.radio-V1-ndk \
     vendor.samsung.hardware.radio.bridge-V1-ndk \
     vendor.samsung.hardware.radio.channel-V1-ndk \
@@ -236,7 +223,6 @@ PRODUCT_PACKAGES += \
     gps \
     gpsd \
     rild \
-    vendor.samsung.hardware.biometrics.face-service \
     vendor.samsung.hardware.biometrics.fingerprint@3.0-service \
     vendor.samsung.hardware.camera.provider@4.0-service \
     vendor.samsung.hardware.gnss@2.1-service \
