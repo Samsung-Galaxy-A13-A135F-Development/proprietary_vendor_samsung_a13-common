@@ -149,52 +149,36 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.gnss@2.1 \
     vendor.samsung.hardware.thermal@1.0 \
-    audio.primary.default \
-    audio.primary.exynos850 \
-    audio.sec_primary.default \
     fingerprint.default \
-    gralloc.default \
-    hwcomposer.exynos850 \
     local_time.default \
     power.default \
     sensors.exynos850 \
-    vendor.samsung.hardware.audio@1.0-impl \
     vibrator.default \
     libBeauty_v4.camera.samsung \
     libDualCamBokehCapture.camera.samsung \
-    libExynosHWCService \
     libFace_Landmark_API.camera.samsung \
     libHprFace_GAE_api.camera.samsung \
     libHpr_RecGAE_cvFeature_v1.0.camera.samsung \
     libLocalTM_capture_core.camera.samsung \
     libLocalTM_wrapper.camera.samsung \
     libOpenCv.camera.samsung \
-    lib_SamsungRec_07010 \
-    libaboxpcmdump \
     libbeautyshot.arcsoft \
-    libdatamod \
     libdualcam_refocus_image \
     libexifa.camera.samsung \
     libexynoscamera_plugin_utils \
     libhdrwrapper \
     libhigh_dynamic_range_bokeh \
-    liblastaboxmsg \
     libmpbase \
     liboemcrypto \
     libprofileparamstorage \
-    librecordalive \
     libsecaudiocoreutils \
-    libsecaudioinfo \
-    libspeakercalibration \
     libwvhidl \
     libswdap \
-    vendor.samsung.hardware.audio@1.0 \
     vendor.samsung.hardware.biometrics.fingerprint@3.0 \
     vendor.samsung.hardware.camera.device@5.0-impl \
     vendor.samsung.hardware.camera.device@5.0 \
     vendor.samsung.hardware.camera.provider@4.0-legacy \
     vendor.samsung.hardware.camera.provider@4.0 \
-    vendor.samsung.hardware.thermal-V1-ndk \
     libSemDataProps \
     libSemTelephonyProps \
     libcrypto-tm \
@@ -215,6 +199,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.messaging-V1-ndk \
     vendor.samsung.hardware.radio.sim-V1-ndk \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
+    vendor.samsung.hardware.biometrics.fingerprint@3.0-service.xml \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
     vendor.samsung.hardware.radio_manifest_2_33.xml \
     vendor.samsung.hardware.sehradio_manifest_2_33.xml \
@@ -226,7 +211,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.biometrics.fingerprint@3.0-service \
     vendor.samsung.hardware.camera.provider@4.0-service \
     vendor.samsung.hardware.gnss@2.1-service \
-    vendor.samsung.hardware.thermal-service \
     snap_utility_32 \
     tzdaemon \
     tzts_daemon \
