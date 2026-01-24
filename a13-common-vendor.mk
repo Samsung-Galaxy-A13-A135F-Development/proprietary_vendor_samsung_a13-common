@@ -18,12 +18,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a13-common/proprietary/vendor/etc/gnss/gps.debug.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.debug.cfg \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/cass.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cass.rc \
+    vendor/samsung/a13-common/proprietary/vendor/etc/init/fingerprint_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint_common.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
+    vendor/samsung/a13-common/proprietary/vendor/etc/init/init.fingerprint.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fingerprint.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/init.gps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/init.ramplus.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.ramplus.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/teegris_v4.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris_v4.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
+    vendor/samsung/a13-common/proprietary/vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc \
+    vendor/samsung/a13-common/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider@4.0-service.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
@@ -114,50 +118,56 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libGLES_mali \
-    camera.exynos850 \
     gatekeeper.exynos850 \
     vulkan.mali \
-    libSEF.quram \
-    libexynoscamera3 \
-    libexynoscamera_plugin \
-    libexynoscamera_tdnr_plugin \
-    libmfb \
-    libremosaic_wrapper \
     libsecnativefeature \
     libsecril-client \
     libsemnativecarrierfeature \
-    libsensorlistener \
     libteecl \
-    libuniapi \
-    libuniplugin \
     libuuid_vendor \
     sensors.grip \
     sensors.sensorhub \
-    vendor.samsung.hardware.thermal@1.0 \
+    camera.exynos850 \
+    fingerprint.default \
+    libSEF.quram \
+    libbauthserver \
+    libbauthtzcommon \
+    libegis_fp_normal_sensor_test \
+    libexynoscamera3 \
+    libexynoscamera_plugin \
+    libexynoscamera_tdnr_plugin \
+    libgf_in_system_lib \
+    libmfb \
     liboemcrypto \
     libprofileparamstorage \
+    libqfp_sensortest \
+    libremosaic_wrapper \
     libsecaudiocoreutils \
+    libsensorlistener \
+    libsynaFpSensorTestNwd \
+    libuniapi \
+    libuniplugin \
     libwvhidl \
     libswdap \
+    vendor.samsung.hardware.biometrics.fingerprint@3.0 \
+    vendor.samsung.hardware.camera.device@5.0-impl \
+    vendor.samsung.hardware.camera.device@5.0 \
+    vendor.samsung.hardware.camera.provider@4.0-legacy \
+    vendor.samsung.hardware.camera.provider@4.0 \
+    vendor.samsung.hardware.thermal@1.0 \
     android.hardware.gnss@2.1-impl \
     vendor.samsung.hardware.gnss@2.1-impl \
     libSemDataProps \
     libSemTelephonyProps \
-    libbauthserver \
-    libbauthtzcommon \
     libcrypto-tm \
-    libegis_fp_normal_sensor_test \
     libengmode_client \
     libfloatingfeature \
-    libgf_in_system_lib \
     libkeymaster_helper \
     libprotobuf-cpp-full-21.7 \
-    libqfp_sensortest \
     libril_sem \
     libsec-ril \
     libskeymaster4device \
     libstork_shared \
-    libsynaFpSensorTestNwd \
     libvkmanager_vendor \
     libvkservice \
     libwrappergps \
@@ -178,6 +188,8 @@ PRODUCT_PACKAGES += \
     gps \
     gpsd \
     rild \
+    vendor.samsung.hardware.biometrics.fingerprint@3.0-service \
+    vendor.samsung.hardware.camera.provider@4.0-service \
     vendor.samsung.hardware.gnss@2.1-service \
     tzdaemon \
     tzts_daemon \
