@@ -460,7 +460,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/hw/camera.exynos850.so",
             ],
             shared_libs: [
-                "libshim_exynoscam",
                 "liblog",
                 "libhardware",
                 "libutils",
