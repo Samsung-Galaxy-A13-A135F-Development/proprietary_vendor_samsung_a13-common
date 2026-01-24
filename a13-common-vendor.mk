@@ -142,6 +142,7 @@ PRODUCT_PACKAGES += \
     libprofileparamstorage \
     libqfp_sensortest \
     libremosaic_wrapper \
+    libsec2lsi_conversion \
     libsecaudiocoreutils \
     libsensorlistener \
     libsynaFpSensorTestNwd \
