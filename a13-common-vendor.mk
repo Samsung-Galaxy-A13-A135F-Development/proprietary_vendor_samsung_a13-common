@@ -26,7 +26,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/teegris_v4.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris_v4.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
-    vendor/samsung/a13-common/proprietary/vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
@@ -75,23 +74,15 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a13-common/proprietary/vendor/firmware/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc_fw.bin \
     vendor/samsung/a13-common/proprietary/vendor/firmware/rxse.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/rxse.bin \
     vendor/samsung/a13-common/proprietary/vendor/firmware/sb_others.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sb_others.bin \
-    vendor/samsung/a13-common/proprietary/vendor/firmware/setfile_4ha.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_4ha.bin \
     vendor/samsung/a13-common/proprietary/vendor/firmware/setfile_gc02m1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_gc02m1.bin \
     vendor/samsung/a13-common/proprietary/vendor/firmware/setfile_gc02m1_macro.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_gc02m1_macro.bin \
     vendor/samsung/a13-common/proprietary/vendor/firmware/setfile_gc08a3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_gc08a3.bin \
     vendor/samsung/a13-common/proprietary/vendor/firmware/setfile_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_gc5035.bin \
-    vendor/samsung/a13-common/proprietary/vendor/firmware/setfile_gm2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_gm2.bin \
-    vendor/samsung/a13-common/proprietary/vendor/firmware/setfile_hi1336.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_hi1336.bin \
     vendor/samsung/a13-common/proprietary/vendor/firmware/setfile_jn1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_jn1.bin \
-    vendor/samsung/a13-common/proprietary/vendor/firmware/setfile_sr846.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_sr846.bin \
     vendor/samsung/a13-common/proprietary/vendor/firmware/tdnr_GC02M1.json:$(TARGET_COPY_OUT_VENDOR)/firmware/tdnr_GC02M1.json \
     vendor/samsung/a13-common/proprietary/vendor/firmware/tdnr_GC08A3.json:$(TARGET_COPY_OUT_VENDOR)/firmware/tdnr_GC08A3.json \
     vendor/samsung/a13-common/proprietary/vendor/firmware/tdnr_GC5035.json:$(TARGET_COPY_OUT_VENDOR)/firmware/tdnr_GC5035.json \
-    vendor/samsung/a13-common/proprietary/vendor/firmware/tdnr_HI1336.json:$(TARGET_COPY_OUT_VENDOR)/firmware/tdnr_HI1336.json \
-    vendor/samsung/a13-common/proprietary/vendor/firmware/tdnr_S5K4HA.json:$(TARGET_COPY_OUT_VENDOR)/firmware/tdnr_S5K4HA.json \
-    vendor/samsung/a13-common/proprietary/vendor/firmware/tdnr_S5KGM2.json:$(TARGET_COPY_OUT_VENDOR)/firmware/tdnr_S5KGM2.json \
     vendor/samsung/a13-common/proprietary/vendor/firmware/tdnr_S5KJN1.json:$(TARGET_COPY_OUT_VENDOR)/firmware/tdnr_S5KJN1.json \
-    vendor/samsung/a13-common/proprietary/vendor/firmware/tdnr_SR846.json:$(TARGET_COPY_OUT_VENDOR)/firmware/tdnr_SR846.json \
     vendor/samsung/a13-common/proprietary/vendor/firmware/txse1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse1.bin \
     vendor/samsung/a13-common/proprietary/vendor/firmware/txse2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse2.bin \
     vendor/samsung/a13-common/proprietary/vendor/tee/00000000-0000-0000-0000-000000010081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000010081 \
@@ -150,10 +141,6 @@ PRODUCT_PACKAGES += \
     sensors.sensorhub \
     libswdap \
     vendor.samsung.hardware.biometrics.fingerprint@3.0 \
-    vendor.samsung.hardware.camera.device@5.0-impl \
-    vendor.samsung.hardware.camera.device@5.0 \
-    vendor.samsung.hardware.camera.provider@4.0-legacy \
-    vendor.samsung.hardware.camera.provider@4.0 \
     vendor.samsung.hardware.thermal@1.0 \
     android.hardware.gnss@2.1-impl \
     vendor.samsung.hardware.gnss@2.1-impl \
@@ -188,7 +175,6 @@ PRODUCT_PACKAGES += \
     gps \
     gpsd \
     rild \
-    vendor.samsung.hardware.biometrics.fingerprint@3.0-service \
     vendor.samsung.hardware.gnss@2.1-service \
     tzdaemon \
     tzts_daemon \
