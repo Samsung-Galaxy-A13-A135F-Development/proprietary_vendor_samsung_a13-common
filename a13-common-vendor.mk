@@ -27,7 +27,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/teegris_v4.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris_v4.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc \
-    vendor/samsung/a13-common/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider@4.0-service.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
     vendor/samsung/a13-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
@@ -125,8 +124,6 @@ PRODUCT_PACKAGES += \
     libsemnativecarrierfeature \
     libteecl \
     libuuid_vendor \
-    sensors.grip \
-    sensors.sensorhub \
     camera.exynos850 \
     fingerprint.default \
     libSEF.quram \
@@ -142,13 +139,15 @@ PRODUCT_PACKAGES += \
     libprofileparamstorage \
     libqfp_sensortest \
     libremosaic_wrapper \
-    libsec2lsi_conversion \
     libsecaudiocoreutils \
     libsensorlistener \
     libsynaFpSensorTestNwd \
     libuniapi \
     libuniplugin \
     libwvhidl \
+    sensors.grip \
+    sensors.inputvirtual \
+    sensors.sensorhub \
     libswdap \
     vendor.samsung.hardware.biometrics.fingerprint@3.0 \
     vendor.samsung.hardware.camera.device@5.0-impl \
@@ -190,7 +189,6 @@ PRODUCT_PACKAGES += \
     gpsd \
     rild \
     vendor.samsung.hardware.biometrics.fingerprint@3.0-service \
-    vendor.samsung.hardware.camera.provider@4.0-service \
     vendor.samsung.hardware.gnss@2.1-service \
     tzdaemon \
     tzts_daemon \

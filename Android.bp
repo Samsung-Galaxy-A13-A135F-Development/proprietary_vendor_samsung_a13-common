@@ -337,118 +337,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "sensors.grip",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/sensors.grip.so",
-            ],
-            shared_libs: [
-                "libutils-v32",
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libfmq",
-                "libhidlbase",
-                "libhardware",
-                "android.hardware.sensors@2.0",
-                "android.hardware.sensors@2.0-ScopedWakelock",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/sensors.grip.so",
-            ],
-            shared_libs: [
-                "libutils-v32",
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libfmq",
-                "libhidlbase",
-                "libhardware",
-                "android.hardware.sensors@2.0",
-                "android.hardware.sensors@2.0-ScopedWakelock",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "sensors.sensorhub",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/sensors.sensorhub.so",
-            ],
-            shared_libs: [
-                "libutils-v32",
-                "android.hardware.sensors@1.0",
-                "android.hardware.sensors@2.0",
-                "android.hardware.sensors@2.0-ScopedWakelock",
-                "android.hardware.sensors@2.1",
-                "libcutils",
-                "liblog",
-                "libhidlbase",
-                "libhidltransport",
-                "libutils",
-                "libhardware",
-                "libhardware_legacy",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/sensors.sensorhub.so",
-            ],
-            shared_libs: [
-                "libutils-v32",
-                "android.hardware.sensors@1.0",
-                "android.hardware.sensors@2.0",
-                "android.hardware.sensors@2.0-ScopedWakelock",
-                "android.hardware.sensors@2.1",
-                "libcutils",
-                "liblog",
-                "libhidlbase",
-                "libhidltransport",
-                "libutils",
-                "libhardware",
-                "libhardware_legacy",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "camera.exynos850",
     owner: "samsung",
     strip: {
@@ -886,30 +774,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsec2lsi_conversion",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libsec2lsi_conversion.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libm",
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libsecaudiocoreutils",
     owner: "samsung",
     strip: {
@@ -1064,6 +928,110 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "sensors.grip",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/sensors.grip.so",
+            ],
+            shared_libs: [
+                "libutils-v32",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libfmq",
+                "libhidlbase",
+                "libhardware",
+                "android.hardware.sensors@2.0",
+                "android.hardware.sensors@2.0-ScopedWakelock",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "sensors.inputvirtual",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/sensors.inputvirtual.so",
+            ],
+            shared_libs: [
+                "android.hardware.sensors@1.0",
+                "android.hardware.sensors@2.0",
+                "android.hardware.sensors@2.0-ScopedWakelock",
+                "android.hardware.sensors@2.1",
+                "libcutils",
+                "liblog",
+                "libhidlbase",
+                "libhidltransport",
+                "libutils",
+                "libhardware",
+                "libhardware_legacy",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "sensors.sensorhub",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/sensors.sensorhub.so",
+            ],
+            shared_libs: [
+                "libutils-v32",
+                "android.hardware.sensors@1.0",
+                "android.hardware.sensors@2.0",
+                "android.hardware.sensors@2.0-ScopedWakelock",
+                "android.hardware.sensors@2.1",
+                "libcutils",
+                "liblog",
+                "libhidlbase",
+                "libhidltransport",
+                "libutils",
+                "libhardware",
+                "libhardware_legacy",
                 "libc++",
                 "libc",
                 "libm",
@@ -2240,53 +2208,6 @@ cc_prebuilt_binary {
                 "libutils",
                 "android.hardware.biometrics.fingerprint@2.1",
                 "vendor.samsung.hardware.biometrics.fingerprint@3.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.samsung.hardware.camera.provider@4.0-service",
-    owner: "samsung",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service",
-            ],
-            shared_libs: [
-                "android.hardware.camera.common@1.0",
-                "android.hardware.camera.device@1.0",
-                "android.hardware.camera.device@3.2",
-                "android.hardware.camera.device@3.3",
-                "android.hardware.camera.device@3.4",
-                "android.hardware.camera.device@3.5",
-                "android.hardware.camera.device@3.6",
-                "vendor.samsung.hardware.camera.device@5.0",
-                "android.hardware.camera.provider@2.4",
-                "vendor.samsung.hardware.camera.provider@4.0",
-                "vendor.samsung.hardware.camera.provider@4.0-legacy",
-                "android.hardware.graphics.mapper@2.0",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@4.0",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "libbinder-v31",
-                "libcamera_metadata",
-                "libhardware",
-                "libhidlbase-v31",
-                "liblog",
-                "libutils-v31",
                 "libc++",
                 "libc",
                 "libm",
