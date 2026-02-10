@@ -150,7 +150,7 @@ PRODUCT_PACKAGES += \
     libengmode_client \
     libfloatingfeature \
     libkeymaster_helper \
-    libprotobuf-cpp-full-21.7 \
+    libprotobuf-cpp-full-21.7-u \
     libril_sem \
     libsec-ril \
     libskeymaster4device \
