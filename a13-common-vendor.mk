@@ -108,40 +108,41 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libGLES_mali \
+    camera.exynos850 \
     gatekeeper.exynos850 \
     vulkan.mali \
-    libsecnativefeature \
-    libsecril-client \
-    libsemnativecarrierfeature \
-    libteecl \
-    libuuid_vendor \
-    camera.exynos850 \
-    fingerprint.default \
     libSEF.quram \
-    libbauthserver \
-    libbauthtzcommon \
-    libegis_fp_normal_sensor_test \
     libexynoscamera3 \
     libexynoscamera_plugin \
     libexynoscamera_tdnr_plugin \
-    libgf_in_system_lib \
+    libhwjpeg \
     libmfb \
+    libremosaic_wrapper \
+    libsecnativefeature \
+    libsecril-client \
+    libsemnativecarrierfeature \
+    libsensorlistener \
+    libteecl \
+    libuniapi \
+    libuniplugin \
+    libuuid_vendor \
+    vendor.samsung.hardware.thermal@1.0 \
+    fingerprint.default \
+    libbauthserver \
+    libbauthtzcommon \
+    libegis_fp_normal_sensor_test \
+    libgf_in_system_lib \
     liboemcrypto \
     libprofileparamstorage \
     libqfp_sensortest \
-    libremosaic_wrapper \
     libsecaudiocoreutils \
-    libsensorlistener \
     libsynaFpSensorTestNwd \
-    libuniapi \
-    libuniplugin \
     libwvhidl \
     sensors.grip \
     sensors.inputvirtual \
     sensors.sensorhub \
     libswdap \
     vendor.samsung.hardware.biometrics.fingerprint@3.0 \
-    vendor.samsung.hardware.thermal@1.0 \
     android.hardware.gnss@2.1-impl \
     vendor.samsung.hardware.gnss@2.1-impl \
     libSemDataProps \
