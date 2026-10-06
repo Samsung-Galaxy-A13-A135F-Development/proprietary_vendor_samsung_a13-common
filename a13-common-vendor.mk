@@ -108,6 +108,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libGLES_mali \
     vulkan.mali \
+    libcryptx \
     libsecnativefeature \
     libsecril-client \
     libsemnativecarrierfeature \
@@ -156,7 +157,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl \
     libSemDataProps \
     libSemTelephonyProps \
-    libcryptx \
     libengmode_client \
     libfloatingfeature \
     libkeymaster_helper \
